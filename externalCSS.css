@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Megrim&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+body {
+  background-color: #111845;
+}
+
+.background-img {
+  background-image: url("https://media-cldnry.s-nbcnews.com/image/upload/newscms/2019_51/3151931/191217-astrology-gets-a-bad-rap-main-kh.jpg");
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #2a3cad;
+  border-radius: 4px;
+  box-shadow: 0px 0px 5px #100c3e;
+  position: relative;
+}
+
+.content h2 {
+  font-size: 19px;
+}
+
+.box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #232b4ba6;
+  box-sizing: border-box;
+  overflow: hidden;
+  box-shadow: 0 20px 50px #1A256E;
+  border: 2px solid #2a3cad;
+  color: white;
+  padding: 20px;
+}
+
+.box:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+.box:hover:before {
+  left: -50%;
+  transform: skewX(-5deg);
+}
+
+
+.box .content {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  border: 1px solid #f8a48d;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 5px 10px rgba(9, 0, 0, 0.5);
+
+}
+
+.info {
+  font-family: 'Megrim', cursive;
+  font-size: 30px;
+}
+
+.btn {
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  border: solid 7px #41403E;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  transition: all 0.5s ease;
+  padding: 1rem 1rem;
+  background: transparent;
+  align-self: center;
+  font-family: 'Megrim', cursive;
+  color: white;
+  margin: 2rem;
+  cursor: pointer;
+}
+
+.box span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  box-sizing: border-box;
+
+}
+
+.box span:nth-child(1) {
+  transform: rotate(0deg);
+}
+
+.box span:nth-child(2) {
+  transform: rotate(90deg);
+}
+
+.box span:nth-child(3) {
+  transform: rotate(180deg);
+}
+
+.box span:nth-child(4) {
+  transform: rotate(270deg);
+}
+
+.box span:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #3C55FA;
+  animation: animate 4s linear infinite;
+}
+
+.txt {
+  width: 19rem;
+  height: 2rem;
+  background: transparent;
+  color: white;
+  border: solid #2C2E2E 1px;
+
+}
+
+.txt:hover {
+  border-color: #6A6F70;
+}
+
+.btn:hover {
+  border-color: #2C2E2E;
+}
+
+@keyframes animate {
+  0% {
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+
+  50% {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+
+  50.1% {
+    transform: scaleX(1);
+    transform-origin: right;
+
+  }
+
+  100% {
+    transform: scaleX(0);
+    transform-origin: right;
+
+  }
+}
+
+
+
+@media screen and (max-width: 844px) {
+
+  /* For tablets: */
+  .box-1 {
+    width: 83%;
+    height: 540px;
+  }
+
+  .background-img-1 {
+    width: 252px;
+    height: 551px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 2rem;
+    background-position: center;
+  }
+
+  .info-1 {
+    padding-top: 3rem;
+  }
+
+  .txt-1 {
+    width: 10rem;
+    height: 1.25rem;
+    border: #2C2E2E 1px solid;
+  }
+}
+
+@media screen and (min-width: 855px) {
+  .box-2 {
+    width: 414px;
+    height: 561px;
+  }
+
+  .background-img-2 {
+    height: 581px;
+    width: 61%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .info-2 {
+    padding-top: 3rem
+  }
+}

@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Signika+Negative:300,400&display=swap');
+
+body {
+    font-family: "Signika Negative", sans-serif;
+
+    margin: 0;
+    padding: 0;
+
+    height: 100%;
+    width: 100%;
+
+    overflow: hidden;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    background-image:
+        radial-gradient(white, rgba(255, 255, 255, .2) 2px, transparent 40px),
+        radial-gradient(white, rgba(255, 255, 255, .15) 1px, transparent 30px),
+        radial-gradient(white, rgba(255, 255, 255, .1) 2px, transparent 40px),
+        radial-gradient(rgba(255, 255, 255, .4), rgba(255, 255, 255, .1) 2px, transparent 30px);
+    background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+    background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+}
+
+.scroller {
+    height: 100vh;
+}
+
+section {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+section .heading {
+    color: darkgoldenrod;
+    font-size: 2.5em;
+}
+
+section .text {
+    position: relative;
+    margin: auto;
+    color: white;
+    font-size: 2em;
+
+}
+
+section.black {
+    position: initial;
+}
+
+section.grey {
+    position: inherit;
+}
+
+section.red {
+    position: inherit;
+}
+
+.horoscope {
+    position: initial;
+    color: white;
+    font-size: 1rem;
+    opacity: 0;
+    transform: translateY(40px);
+}
+.bold {
+    font-size: 3rem;
+}
+@media screen and (max-width: 844px) {
+
+
+    .txt-1 {
+        width: 17rem;
+        height: 1.25rem;
+        padding: 24rem 3rem 0 3rem;
+    }
+
+    .horoscope-1 {
+        width: 19rem;
+        font-size: 1rem;
+        padding: 1rem 0 0 33rem;
+        margin-top: 1rem;
+    }
+
+    .bold-1 {
+        font-size: 1.25rem;
+    }
+    .heading-1 {
+        padding: 13rem 2rem;
+    }
+}
+
+@media screen and (min-width: 855px) {
+
+
+    .horoscope-2 {
+        margin: 20rem 33rem;
+        left: 33rem;
+        position: relative;
+        font-size: 1.25rem;
+    }
+
+    .heading-2 {
+        position: relative;
+        margin: auto;
+    }
+}
