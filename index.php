@@ -44,7 +44,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                         Full name<br><input type="text" name="name" class="txt txt-1" required><?php echo $nameErr; ?><br>
                         Address<br><input type="text" name="address" class="txt txt-1" required><?php echo $addressErr; ?><br>
                         Birthday<br> <input type="date" name="birthday" class="txt txt-1" required><?php echo $birthdayErr; ?><br>
-                        Zodiac Sign<br><input type="text" name="zodiac" class="txt txt-1" required><?php echo $zodiacErr; ?><br>
+                        Zodiac Sign<br><input type="text" name="zodiac" class="txt txt-1" value="case sensitive :)" required><?php echo $zodiacErr; ?><br>
                         <div>
                             <input type="submit" class="btn">
                         </div>

@@ -90,7 +90,7 @@ $zodiac = $_POST['zodiac'];
                         echo "<br>";
                         echo "A new beginning on the horizon is waiting for you Aries while welcoming the year 2022 with a cheer.
                     <br>Financial stability is much indicated throughout the year.
-                    <br>Although you should limit yourself for lending money on a goodwill in the second half.
+                    <br>Although you should limit yourself for lending money on a goodwill in the ddsecond half.
                     <br>Some of you may be more inclined to pursue spiritual contentment towards the end of the first quarter.
                     <br>Your hard work is likely to pay off well as the dream of purchasing a house of your own is now going to come true.
                     <br>Shun off any negativity you may be getting from your peers for your marriage and career choices.
@@ -341,6 +341,7 @@ $zodiac = $_POST['zodiac'];
                         break;
                     default:
                         echo "Your horoscope for 2022 is to have a valid zodiac sign :D";
+                        //source https://www.hindustantimes.com/astrology/horoscope/yearly-horoscope-2022-check-out-what-is-in-store-for-all-zodiac-signs-101641006621049.html
                 }
                 ?></div>
         </section>
